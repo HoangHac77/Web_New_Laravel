@@ -18,3 +18,10 @@ php artisan key:generate
 
 chạy lên web
 php artisan serve
+
+để dùng scss thì chạy lệnh
+npm run dev 
+->
+npm run watch(chạy xong ko được tắt terminal để nó chạy như server)
+
+
