@@ -1,0 +1,331 @@
+// font
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@700&family=Rubik+Mono+One&display=swap');
+
+// variable
+$gray-color-custom-1: #DBD0CC;
+$gray-color-custom-2: #c9cce6;
+$gray-color-custom-3: #959595;
+$gray-color-custom-4: #615F6F;
+$blue-color-custom: #0000CD;
+$white-color: #ffffff;
+
+* {
+    margin: 0;
+    padding: 0;
+
+    body{
+        width: 1100px !important;
+        margin-left: auto;
+        margin-right: auto;
+
+        a{
+            text-decoration: none;
+        }
+        
+
+        // Header css
+        #header{
+            height: 110px;
+            width: 100%;
+            // background-color: rgb(171, 167, 167);
+            padding: 10px 0 10px 0;
+            margin-bottom: 30px;
+
+
+            .header_container{
+                height: 100%;
+                width: 100%;    
+
+                .header-top{
+                    height: 51px;
+                    width: 100%;
+                    // background-color: rgb(171, 167, 167);
+
+                    .header-top_container{
+                        display: flex;
+                        justify-content: space-between;
+
+                        .left-container{
+                            // border-color: #DBD0CC;
+                            // border-radius: 10px;
+                            // border-style: ridge;
+                            display: flex;
+                            justify-content: space-between;
+
+                            span{
+                                display: block;
+                                align-self: center;
+                                margin-left: 10px;
+                                text-transform: uppercase;
+                                font-family: 'Rubik Mono One', sans-serif;
+                            }
+                        }
+
+                        .right-container{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            a{
+                                text-decoration: none;
+                                font-size: 14px;
+                                color: #959595;
+
+                                &:hover{
+                                    color: black;
+                                }
+                            }
+
+                            #News{
+                                padding-right: 10px;
+                            }
+
+                            #Find-place{
+                                padding-right: 10px;
+                            }
+
+                            span{
+                                padding-right: 10px;
+                                color: $gray-color-custom-1;
+                            }
+
+                            .input-search{
+                                display: flex;
+                                justify-content: space-between;
+                                padding-right: 10px;
+
+                                input{
+                                    padding-left: 25px;
+                                    border-radius: 15px;
+                                    border-color: $gray-color-custom-1;
+                                    outline: none;
+                                }
+
+                                i{
+                                    align-self: center;
+                                    position: absolute;
+                                    padding-left: 5px;
+                                }
+                            }
+
+                            button{
+                                margin-right: 10px;
+                            }
+
+                            i{
+                                align-self: center;
+                            }
+                        }
+                    }
+                }
+
+                .header-bottom{
+                    height: 45px;
+                    width: 100%;
+                    border-top: 1px solid $gray-color-custom-1;
+                    // background-color: rgb(143, 94, 94);
+                    background-color: $blue-color-custom;
+                    padding: 0 5px 0 5px;
+                    
+                    .header-bottom_container{
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .left-header{
+                            height: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            #home_icon{
+                                padding-left: 10px;
+
+                                a{
+                                    i{
+                                        color: $white-color;
+                                    }
+                                }
+                            }
+
+                            #list_item{
+                                list-style: none;
+                                display: flex;
+                                justify-content: space-between;
+                                margin-top: none;
+                                margin-bottom: 0;
+                                color: $white-color;
+                                height: 100%;
+                                align-items: center;
+
+                                li{
+                                    margin-right: 10px;
+                                    padding: 10.5px;
+
+                                    &:hover{
+                                        background-color: white;
+
+                                        a{
+                                            color: blue;
+                                            padding: 10px;
+                                        }
+                                    }
+
+                                    a{
+                                        color: $white-color;
+                                        font-size: 14px;
+                                        font-family: 'Montserrat', sans-serif;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .right-header{
+
+                            .menu-container{
+                                color: $gray-color-custom-2;
+                                background-color: transparent;
+                                border-style: none;
+
+                                &:hover{
+                                    color: $white-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //footer css
+
+        #footer{
+            height: 400px;
+            width: 100%;
+            margin-top: 40px;
+            // background-color: $gray-color-custom-1;
+        
+            .footer-container{
+
+                .footer-top{
+                    height: 180px;
+                    display: grid;
+                    grid-template-columns: auto auto auto auto;
+                    grid-gap: 10px;
+
+                    .item{
+                        text-align: center;
+                        align-self: center;
+                        
+                        a{
+                            color: $gray-color-custom-4;
+                            
+                            &:hover{
+                                color: black;
+                            }
+                        }
+
+                    }
+                }
+
+                .footer-center{
+                    height: 70px;
+                    border-top: 0.5px solid $gray-color-custom-3;
+                    border-bottom: 0.5px solid $gray-color-custom-3;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .footer-center_left{
+                        align-self: center;
+
+                            span:first-child{
+                                padding-right: 10px;
+                                font-size: 14px;
+                                font-family: 'Inter', sans-serif;
+                            }
+                        
+                    }
+
+                    .footer-center_right{
+                        align-self: center;
+
+                        .right-container{
+                            display: flex;
+                            justify-content: space-between;
+
+                            span{
+                                font-size: 14px;
+                                padding-right: 10px;
+                            }
+
+                            .left{
+                                padding-right: 10px;
+                                font-size: 14px;
+                                align-self: center;
+                                color: $gray-color-custom-3;
+
+                                span:hover{
+                                    color: black;
+                                    cursor: pointer;
+                                }
+
+                                // span:first-child{
+                                //     padding-right: 5px;
+                                // }
+                            }
+
+                            .right{
+                                font-size: 14px;
+
+                                img{
+                                    padding-right: 4px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .footer-bottom{
+                    height: 150px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .footer-bottom_left{
+                        display: flex;
+                        flex-direction: column;
+
+                        span:nth-child(2){
+                            color: $blue-color-custom;
+                            font-weight: 600;
+                        }
+
+                        span:last-child{
+                            color: $blue-color-custom;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .footer-bottom_center{
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .footer-bottom_right{
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    span{
+                        font-size: 13px;
+                        font-family: 'Inter', sans-serif;
+                    }
+                }
+            }
+        }
+    }
+
+}
