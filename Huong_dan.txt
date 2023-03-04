@@ -1,0 +1,20 @@
+Clone về chạy yarn
+
+mở command port(cmd) tại ví trị thư mục vừa clone
+hoặc mở terminal trong vscode
+
+chạy
+composer update
+
+chạy 
+composer install
+
+tạo file .env
+copy hết nội dung của file .env.example sang
+
+chạy lệnh 
+php artisan key:generate
+->tự động tạo key
+
+chạy lên web
+php artisan serve
