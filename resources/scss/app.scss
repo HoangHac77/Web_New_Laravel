@@ -17,7 +17,6 @@ $white-color: #ffffff;
         width: 1100px !important;
         margin-left: auto;
         margin-right: auto;
-
         a{
             text-decoration: none;
         }
@@ -29,7 +28,7 @@ $white-color: #ffffff;
             width: 100%;
             // background-color: rgb(171, 167, 167);
             padding: 10px 0 10px 0;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
 
 
             .header_container{
@@ -325,6 +324,63 @@ $white-color: #ffffff;
                     }
                 }
             }
+        }
+        //
+        #layout{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            grid-template-rows: 300px 200px;
+            height: 500px;
+            
+            
+            .layout-item{
+                display: flex;
+                .layout-description-first
+                {
+                    padding: 15px 0 0px 15px;
+                    .layout-content-first{
+                        display: -webkit-box;
+                        padding-top: 5px;
+                        -webkit-line-clamp: 7;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden; 
+                        text-overflow: ellipsis;
+                    }
+                }
+                .layout-description{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 15px 0 0px 15px;
+                    // justify-content: space-between;
+                    .layout-title{
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                    .layout-content{
+                        display: -webkit-box;
+                        padding-top: 5px;
+                        -webkit-line-clamp: 5;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden; 
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+            .layout-image{
+                padding-top: 20px;
+                height: 100px;
+                width: 100px;
+                object-fit: cover;
+            }
+            .layout-image-fisrt{
+                height: auto ;
+                width: 1000px;
+            }
+            .layout-item:first-child{
+                grid-column: 1/4;
+            }
+
         }
     }
 
