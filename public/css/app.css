@@ -15,7 +15,7 @@
   height: 110px;
   width: 100%;
   padding: 10px 0 10px 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 * body #header .header_container {
   height: 100%;
@@ -237,4 +237,56 @@
 * body #footer .footer-container .footer-bottom span {
   font-size: 13px;
   font-family: "Inter", sans-serif;
+}
+* body #layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-rows: 300px 200px;
+  height: 500px;
+}
+* body #layout .layout-item {
+  display: flex;
+}
+* body #layout .layout-item .layout-description-first {
+  padding: 15px 0 0px 15px;
+}
+* body #layout .layout-item .layout-description-first .layout-content-first {
+  display: -webkit-box;
+  padding-top: 5px;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+* body #layout .layout-item .layout-description {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 0px 15px;
+}
+* body #layout .layout-item .layout-description .layout-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+* body #layout .layout-item .layout-description .layout-content {
+  display: -webkit-box;
+  padding-top: 5px;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+* body #layout .layout-image {
+  padding-top: 20px;
+  height: 100px;
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+* body #layout .layout-image-fisrt {
+  height: auto;
+  width: 1000px;
+}
+* body #layout .layout-item:first-child {
+  grid-column: 1/4;
 }
