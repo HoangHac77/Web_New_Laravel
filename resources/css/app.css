@@ -1,0 +1,29 @@
+@keyframes showalert {
+    form {
+        opacity: 0;
+        transform: translate(0, 100px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+@keyframes grow {
+    100% {
+        height: 90%;
+        width: 90%;
+    }
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

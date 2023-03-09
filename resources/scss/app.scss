@@ -162,10 +162,11 @@ $white-color: #ffffff;
                                 li{
                                     margin-right: 10px;
                                     padding: 10.5px;
-
+                                    display: inline-block;
+                                    position: relative;
+                                    transition: 0.5s;
                                     &:hover{
                                         background-color: white;
-
                                         a{
                                             color: blue;
                                             padding: 10px;
@@ -177,21 +178,92 @@ $white-color: #ffffff;
                                         font-size: 14px;
                                         font-family: 'Montserrat', sans-serif;
                                     }
+                                    
+                                    ul{
+                                        position: absolute;
+                                        top:100%;
+                                        left: 0;
+                                        width: 250px;
+                                        margin: 0;
+                                        padding: 0;
+                                        background: $blue-color-custom;
+                                        text-align: left;
+                                        display: none;
+                                    }
+
+                                    &:hover > ul{
+                                        display: block;
+                                        a{
+                                            color: $white-color;
+                                        }  
+                                    }
+                                    ul li{
+                                        width: calc(100% - 21px);
+                                        &:hover{
+                                            width: 100%;
+                                            a{
+                                                color: blue;
+                                                padding: 10px;
+                                            }
+                                        }
+                                    }
                                 }
+                                
+                            
                             }
 
                         }
 
                         .right-header{
-
+                            
                             .menu-container{
                                 color: $gray-color-custom-2;
                                 background-color: transparent;
                                 border-style: none;
-
+                                scroll-behavior: smooth;
                                 &:hover{
                                     color: $white-color;
                                 }
+                                .menulist {
+                                    display: none;
+                                    box-shadow: 0px 6px 8px rgba(19, 19, 19, .7);
+                                    background-color: #95959595;
+                                    position: fixed;
+                                    left: 50%;
+                                    top: 55%;
+                                    transform: translate(-50%,-50%);
+                                    height: 550px;
+                                    width: 1100px;
+                                    &:target {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                      }
+
+                                      .content {
+                                        
+                                        position: relative;
+                                        width: 100%;
+                                        height: 100%;
+                                        color: #fff;
+                                        animation: 1s grow ease forwards;
+                                        .icon_close::before{
+                                            content: "\f00d";
+                                            right: 0;
+                                            top: 0;
+                                            width: 50px;
+                                            height: 50px;
+                                            position: absolute;
+                                            display: flex;
+                                            z-index: 1;
+                                            font-size: 30px;
+                                            align-items: center;
+                                            justify-content: center;
+                                        }
+                                      }
+    
+                                 }
+                                 
                             }
                         }
                     }
@@ -325,7 +397,8 @@ $white-color: #ffffff;
                 }
             }
         }
-        //
+
+        // body
         #layout{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -336,9 +409,10 @@ $white-color: #ffffff;
             
             .layout-item{
                 display: flex;
-                .layout-description-first
-                {
+
+                .layout-description-first{
                     padding: 15px 0 0px 15px;
+
                     .layout-content-first{
                         display: -webkit-box;
                         padding-top: 5px;
@@ -347,15 +421,18 @@ $white-color: #ffffff;
                         overflow: hidden; 
                         text-overflow: ellipsis;
                     }
+
                 }
                 .layout-description{
                     display: flex;
                     flex-direction: column;
                     padding: 15px 0 0px 15px;
                     // justify-content: space-between;
+
                     .layout-title{
                         font-size: 20px;
                         font-weight: 600;
+                        
                     }
                     .layout-content{
                         display: -webkit-box;
@@ -380,8 +457,41 @@ $white-color: #ffffff;
             .layout-item:first-child{
                 grid-column: 1/4;
             }
-
         }
+
+        .alert{
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 300px;
+            background-color: #CE647c;
+            color: #fff;
+            font-family: system-ui;
+            padding: 10px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 40px auto 30px;
+            // animation: showalert 0.5s ease-in-out 1;
+            display: none;
+            .title{
+                font-weight: bold;
+            }
+
+            .des{
+                font-size: small;
+            }
+
+            .icon, 
+            .close{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        #success{
+            background-color: #31AF8C;
+        }
+        
     }
 
 }

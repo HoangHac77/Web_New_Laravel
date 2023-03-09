@@ -2163,6 +2163,22 @@ module.exports = {
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+var alert = document.querySelectorAll(".alert");
+alert.forEach(function (item) {
+  item.addEventListener("click", function (event) {
+    if (event.target.classList.contains("close")) {
+      item.style.display = "none";
+    }
+  });
+});
+window.addEventListener("offline", function () {
+  document.getElementById("success").style.display = "none";
+  document.getElementById("error").style.display = "grid";
+});
+window.addEventListener("online", function () {
+  document.getElementById("error").style.display = "none";
+  document.getElementById("success").style.display = "grid";
+});
 
 /***/ }),
 

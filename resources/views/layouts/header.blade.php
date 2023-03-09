@@ -38,16 +38,41 @@
                     <ul id="list_item">
                         <li><a href="">Tin mới </a></li>
                         <li><a href="">Việt Nam</a></li>
-                        <li><a href="">Thế giới</a></li>
-                        <li><a href="">Khoa học</a></li>
+                        <li><a href="">Thế giới</a>
+                            <ul>
+                                <li><a href="">Tư Liệu</a></li>
+                                <li><a href="">Phân Tích</a></li>
+                                <li><a href="">Người Việt Năm Châu</a></li>
+                                <li><a href="">Cuộc Sống Đó Đây</a></li>
+                                <li><a href="">Quân Sự</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Khoa học</a>
+                            <ul>
+                                <li><a href="">Tin Tức</a></li>
+                                <li><a href="">Phát Minh</a></li>
+                                <li><a href="">Ứng Dụng</a></li>
+                                <li><a href="">Thế Giới Tự Nhiên</a></li>
+                                <li><a href="">Sáng Kiến Khoa Học</a></li>
+                            </ul>
+                        </li>
                         <li><a href="">Đời sống</a></li>
                     </ul>
                 </div>
                 <div class="right-header">
-                    <button class="menu-container">
-                        <span>Tất cả</span>
-                        <i class="fa fa-bars"></i>
-                    </button>
+                    <div class="menu-container">
+                        <a href="#menu"><i class="fa fa-bars All_list"></i></a>
+                        <div class="menulist" id="menu">
+                            <div class='content'>
+                                <a href="#"><i class="fa-solid fa-xmark icon_close"></i></a>
+                                <div class='nav_menu'>
+                                    <ul class='nav_list_list'>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
