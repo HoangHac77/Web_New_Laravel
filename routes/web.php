@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +21,10 @@ use App\Http\Controllers\HomeController;
 // });
 
 Route::get('/', [HomeController::class, 'index']);
-Route::resource('/admin', AdminController::class);
+
+
+Route::prefix('/admin')->group(function() {
+    Route::get('/', [AdminController::class, 'index']);
+})
 
 ?>
