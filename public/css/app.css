@@ -212,6 +212,9 @@
   align-items: center;
   justify-content: center;
 }
+* body #header .header_container .header-bottom .header-bottom_container .right-header .menu-container .all_list {
+  color: #ffffff;
+}
 * body #footer {
   height: 400px;
   width: 100%;

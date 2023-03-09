@@ -241,7 +241,6 @@ $white-color: #ffffff;
                                       }
 
                                       .content {
-                                        
                                         position: relative;
                                         width: 100%;
                                         height: 100%;
@@ -261,9 +260,11 @@ $white-color: #ffffff;
                                             justify-content: center;
                                         }
                                       }
-    
                                  }
-                                 
+
+                                 .all_list{
+                                    color: $white-color;
+                                 }
                             }
                         }
                     }

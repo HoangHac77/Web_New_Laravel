@@ -20,7 +20,7 @@
                         {{-- <i class="fa fa-lock icon"></i>
               <input class="input-field" type="text"> --}}
                     </div>
-                    <button class="btn btn-primary">Dang nhap</button>
+                    <button class="btn btn-primary">Đăng Nhập</button>
                     <i class="fa fa-bell"></i>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="right-header">
                     <div class="menu-container">
-                        <a href="#menu"><i class="fa fa-bars All_list"></i></a>
+                        <a href="#menu"><i class="fa fa-bars all_list"></i></a>
                         <div class="menulist" id="menu">
                             <div class='content'>
                                 <a href="#"><i class="fa-solid fa-xmark icon_close"></i></a>
