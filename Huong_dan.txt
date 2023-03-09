@@ -25,3 +25,7 @@ npm run dev
 npm run watch(chạy xong ko được tắt terminal để nó chạy như server)
 
 
+Cắt template
+
+https://startbootstrap.com/previews/sb-admin-pro
+
