@@ -1,9 +1,10 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-
+use App\Http\Controllers\PostsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,8 @@ Route::get('/', [HomeController::class, 'index']);
 
 Route::prefix('/admin')->group(function() {
     Route::get('/', [AdminController::class, 'index']);
+    Route::resource('/post', PostsController::class);
+    Route::resource('/category', CategoryController::class);
 })
 
 ?>
