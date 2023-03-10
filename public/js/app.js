@@ -2179,6 +2179,9 @@ window.addEventListener("online", function () {
   document.getElementById("error").style.display = "none";
   document.getElementById("success").style.display = "grid";
 });
+document.getElementById("all_menu").onclick = function () {
+  document.getElementById("menu-container").classList.toggle("activeMenu");
+};
 
 /***/ }),
 

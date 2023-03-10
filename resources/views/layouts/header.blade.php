@@ -60,23 +60,223 @@
                     </ul>
                 </div>
                 <div class="right-header">
-                    <div class="menu-container">
-                        <a href="#menu"><i class="fa fa-bars all_list"></i></a>
-                        <div class="menulist" id="menu">
-                            <div class='content'>
-                                <a href="#"><i class="fa-solid fa-xmark icon_close"></i></a>
-                                <div class='nav_menu'>
-                                    <ul class='nav_list_list'>
+                    <div id="menu-container" class="activeMenu">
+                        <div id="all_menu">
+                            <a href="#menulist"><i class="fa fa-bars all_list"></i></a>
+                        </div>
 
-                                    </ul>
-                                </div>
+                        <div class="menulist" id="menulist">
+                            <div class='content'>
+                                <a href="#" class=""><i class="fa-solid fa-xmark icon_close"></i></a>
+                                <h2>Tất Cả Chuyên Mục</h2>
+                                <hr>
+                            </div>
+                            <div class='nav_menu'>
+                                <ul>
+                                    <li class="list">
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban minh la nhóm</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Tao La ai</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <li>hi ban</li>
+                                            <hr>
+                                            <li>Xem Thêm</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class='vl'></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        {{-- end header top --}}
     </div>
-    {{-- end header container --}}
+    {{-- end header top --}}
+</div>
+{{-- end header container --}}
 </div>
