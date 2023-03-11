@@ -5,6 +5,9 @@ use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostsController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UsersController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,17 +20,22 @@ use App\Http\Controllers\PostsController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('home.home');
+});
 
-Route::get('/', [HomeController::class, 'index']);
+Auth::routes();
 
+Route::get('/home', [HomeController::class, 'index']);
 
-Route::prefix('/admin')->group(function() {
-    Route::get('/', [AdminController::class, 'index']);
-    Route::resource('/post', PostsController::class);
-    Route::resource('/category', CategoryController::class);
-})
+// Route::get('/home', [HomeController::class, 'index']);
 
-?>
+Route::middleware(['auth', 'user-role:admin'])->group(function(){
+    Route::prefix('/admin')->group(function() {
+        Route::get('/', [AdminController::class, 'index']);
+        Route::resource('/post', PostsController::class);
+        Route::resource('/category', CategoryController::class);
+        Route::resource('/profile', ProfileController::class);
+        Route::resource('/user', UsersController::class);
+    });
+});

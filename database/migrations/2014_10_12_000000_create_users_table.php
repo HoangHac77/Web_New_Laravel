@@ -17,8 +17,12 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->enum('gender',['male','female'])->nullable();
+            $table->string('img_profile')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            // 0 = user, 1 = author, 2 = admin 
+            $table->tinyInteger('role')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });

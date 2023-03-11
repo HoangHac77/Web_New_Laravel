@@ -1,5 +1,5 @@
 {{-- ke thua master layout --}}
-@extends('layouts.app')
+@extends('layouts.apps')
 
 {{-- body --}}
 @section('content')

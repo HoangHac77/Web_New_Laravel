@@ -31,6 +31,8 @@ https://startbootstrap.com/previews/sb-admin-pro
 
 http://www.kieutrongkhanh.net/2020/12/bai-6-thuc-hien-chuc-nang-register-user.html
 
+// "dev": "npm run development",
+
 
 
 {{-- <!-- Sidenav Menu Heading (Account)-->

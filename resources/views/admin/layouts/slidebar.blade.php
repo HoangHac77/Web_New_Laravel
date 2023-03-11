@@ -18,13 +18,18 @@
                     <div class="nav-link-icon"><i data-feather="book-open"></i></div>
                     Category
                 </a>
+                <!-- Sidenav Link (Tables)-->
+                <a class="nav-link" href="/admin/user">
+                    <div class="nav-link-icon"><i data-feather="users"></i></div>
+                    User
+                </a>
             </div>
         </div>
         <!-- Sidenav Footer-->
         <div class="sidenav-footer">
             <div class="sidenav-footer-content">
                 <div class="sidenav-footer-subtitle">Logged in as:</div>
-                <div class="sidenav-footer-title">Valerie Luna</div>
+                <div class="sidenav-footer-title">{{ Auth::user()->name }}</div>
             </div>
         </div>
     </nav>
