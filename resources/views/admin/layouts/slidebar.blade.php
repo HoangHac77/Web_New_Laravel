@@ -1,12 +1,12 @@
 <div id="layoutSidenav_nav">
-    <nav class="sidenav shadow-right sidenav-light">
+    <nav class="sidenav shadow-right sidenav-dark">
         <div class="sidenav-menu">
             <div class="nav accordion" id="accordionSidenav">
                 <!-- Sidenav Heading (Posts)-->
                 <div class="sidenav-menu-heading">Start</div>
                 <!-- Sidenav Link (Charts)-->
                 <a class="nav-link" href="/admin">
-                    <div class="nav-link-icon"><i data-feather="book"></i></div>
+                    <div class="nav-link-icon"><i data-feather="bookmark"></i></div>
                     DashBoard
                 </a>
                 <a class="nav-link" href="/admin/post">

@@ -1,4 +1,4 @@
-<nav class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-light bg-white"
+<nav class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-light bg-dark"
     id="sidenavAccordion">
     <!-- Sidenav Toggle Button-->
     <button class="btn btn-icon btn-transparent-dark order-1 order-lg-0 me-2 ms-lg-2 me-lg-0" id="sidebarToggle"><i
@@ -7,7 +7,7 @@
     <!-- * * Tip * * You can use text or an image for your navbar brand.-->
     <!-- * * * * * * When using an image, we recommend the SVG format.-->
     <!-- * * * * * * Dimensions: Maximum height: 32px, maximum width: 240px-->
-    <a class="navbar-brand pe-3 ps-4 ps-lg-2" href="/admin">SB Admin Pro</a>
+    <a class="navbar-brand pe-3 ps-4 ps-lg-2 text-white" href="/admin">SB Admin Pro</a>
     <!-- Navbar Search Input-->
     <!-- * * Note: * * Visible only on and above the lg breakpoint-->
     <form class="form-inline me-auto d-none d-lg-block me-3">
@@ -22,8 +22,8 @@
         <li class="nav-item dropdown no-caret d-none d-md-block me-3">
             <a class="nav-link dropdown-toggle" id="navbarDropdownDocs" href="javascript:void(0);" role="button"
                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="fw-500">Documentation</div>
-                <i class="fas fa-chevron-right dropdown-arrow"></i>
+                <div class="fw-500 text-light">Documentation</div>
+                <i class="fas fa-chevron-right dropdown-arrow text-light"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-end py-0 me-sm-n15 me-lg-0 o-hidden animated--fade-in-up"
                 aria-labelledby="navbarDropdownDocs">
@@ -74,7 +74,7 @@
         </li>
         <!-- Alerts Dropdown-->
         <li class="nav-item dropdown no-caret d-none d-sm-block me-3 dropdown-notifications">
-            <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownAlerts"
+            <a class="btn btn-icon btn-transparent-light dropdown-toggle" id="navbarDropdownAlerts"
                 href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false"><i data-feather="bell"></i></a>
             <div class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up"
@@ -125,7 +125,7 @@
         </li>
         <!-- Messages Dropdown-->
         <li class="nav-item dropdown no-caret d-none d-sm-block me-3 dropdown-notifications">
-            <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownMessages"
+            <a class="btn btn-icon btn-transparent-light dropdown-toggle" id="navbarDropdownMessages"
                 href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false"><i data-feather="mail"></i></a>
             <div class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up"

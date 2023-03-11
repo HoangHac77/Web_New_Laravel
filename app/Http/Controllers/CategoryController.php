@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class CategoryController extends Controller
 {
@@ -13,7 +15,9 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return view("admin.pages.category");
+        $categories = Category::all();
+        // dd($category);
+        return view("admin.pages.category.category")->with('categories', $categories);
     }
 
     /**
@@ -23,7 +27,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view("admin.pages.category.create");
     }
 
     /**
@@ -34,7 +38,18 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required|min:3',
+            'desc' => 'required|min:10|max:300',
+        ]);
+        // dd($request->all());
+        $categories = Category::create([
+            'name' => $request->input('name'),
+            'slug' => Str::slug($request->name),
+            'desc' => $request->input('desc'),
+        ]);
+        $categories->save();
+        return redirect('/admin/category');
     }
 
     /**
@@ -56,7 +71,9 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $categories = Category::find($id);
+        // dd($categories);
+        return view('admin.pages.category.edit')->with('categories', $categories);
     }
 
     /**
@@ -68,7 +85,17 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'name' => 'required|min:3',
+            'desc' => 'required|min:10|max:300',
+        ]);
+        $categories = Category::where('id', $id)
+            ->update([
+                'name' => $request->input('name'),
+                'slug' => Str::slug($request->name),
+                'desc' => $request->input('desc'),
+            ]);
+        return redirect('/admin/category');
     }
 
     /**
@@ -79,6 +106,9 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $categories = Category::find($id);
+        $categories->delete();
+
+        return redirect('/admin/category');
     }
 }
