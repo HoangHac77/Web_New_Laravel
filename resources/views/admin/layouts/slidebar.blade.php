@@ -29,7 +29,16 @@
         <div class="sidenav-footer">
             <div class="sidenav-footer-content">
                 <div class="sidenav-footer-subtitle">Logged in as:</div>
-                <div class="sidenav-footer-title">{{ Auth::user()->name }}</div>
+                @if (is_null(Auth::user()))
+                    <div class="sidenav-footer-title">
+                        Admin name
+                    </div>
+                @else
+                    <div class="sidenav-footer-title">
+                        {{ Auth::user()->name }}
+                    </div>
+                @endif
+                {{-- {{ var_dump(Auth::user()) }} --}}
             </div>
         </div>
     </nav>

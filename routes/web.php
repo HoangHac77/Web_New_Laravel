@@ -30,7 +30,18 @@ Route::get('/home', [HomeController::class, 'index']);
 
 // Route::get('/home', [HomeController::class, 'index']);
 
-Route::middleware(['auth', 'user-role:admin'])->group(function(){
+// Route::middleware(['auth', 'user-role:admin'])->group(function(){
+//     Route::prefix('/admin')->group(function() {
+//         Route::get('/', [AdminController::class, 'index']);
+//         Route::resource('/post', PostsController::class);
+//         Route::resource('/category', CategoryController::class);
+//         Route::resource('/profile', ProfileController::class);
+//         Route::resource('/user', UsersController::class);
+//     });
+// });
+
+
+
     Route::prefix('/admin')->group(function() {
         Route::get('/', [AdminController::class, 'index']);
         Route::resource('/post', PostsController::class);
@@ -38,4 +49,4 @@ Route::middleware(['auth', 'user-role:admin'])->group(function(){
         Route::resource('/profile', ProfileController::class);
         Route::resource('/user', UsersController::class);
     });
-});
+
