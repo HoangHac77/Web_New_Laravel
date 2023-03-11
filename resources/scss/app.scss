@@ -6,70 +6,78 @@ $gray-color-custom-1: #DBD0CC;
 $gray-color-custom-2: #c9cce6;
 $gray-color-custom-3: #959595;
 $gray-color-custom-4: #615F6F;
-$blue-color-custom: #0000CD;
-$white-color: #ffffff;
+$blue-color-custom  : #0000CD;
+$white-color        : #ffffff;
 
 * {
-    margin: 0;
+    margin : 0;
     padding: 0;
 
     body {
-        width: 1100px !important;
-        margin-left: auto;
+        width       : 1100px !important;
+        margin-left : auto;
         margin-right: auto;
 
         a {
             text-decoration: none;
         }
 
+        // table td {
+        //     border: 1px solid #cccccc;
+        // }
+
+        // td {
+        //     text-align    : center;
+        //     vertical-align: middle;
+        // }
 
         // Header css
         #header {
-            height: 110px;
-            width: 100%;
+            height             : 110px;
+            width              : 100%;
             // background-color: rgb(171, 167, 167);
-            padding: 10px 0 10px 0;
-            margin-bottom: 20px;
+            padding            : 10px 0 10px 0;
+            margin-bottom      : 20px;
 
 
             .header_container {
                 height: 100%;
-                width: 100%;
+                width : 100%;
 
                 .header-top {
-                    height: 51px;
-                    width: 100%;
+                    height             : 51px;
+                    width              : 100%;
                     // background-color: rgb(171, 167, 167);
 
                     .header-top_container {
-                        display: flex;
+                        display        : flex;
                         justify-content: space-between;
 
                         .left-container {
                             // border-color: #DBD0CC;
                             // border-radius: 10px;
                             // border-style: ridge;
-                            display: flex;
+                            display        : flex;
                             justify-content: space-between;
 
                             span {
-                                display: block;
-                                align-self: center;
-                                margin-left: 10px;
+                                display       : block;
+                                align-self    : center;
+                                margin-left   : 10px;
                                 text-transform: uppercase;
-                                font-family: 'Rubik Mono One', sans-serif;
+                                font-family   : 'Rubik Mono One', sans-serif;
                             }
                         }
 
                         .right-container {
-                            display: flex;
+                            display        : flex;
                             justify-content: space-between;
-                            align-items: center;
+                            align-items    : center;
 
                             a {
                                 text-decoration: none;
-                                font-size: 14px;
-                                color: #959595;
+                                font-size      : 14px;
+                                color          : #959595;
 
                                 &:hover {
                                     color: black;
@@ -86,24 +94,24 @@ $white-color: #ffffff;
 
                             span {
                                 padding-right: 10px;
-                                color: $gray-color-custom-1;
+                                color        : $gray-color-custom-1;
                             }
 
                             .input-search {
-                                display: flex;
+                                display        : flex;
                                 justify-content: space-between;
-                                padding-right: 10px;
+                                padding-right  : 10px;
 
                                 input {
-                                    padding-left: 25px;
+                                    padding-left : 25px;
                                     border-radius: 15px;
-                                    border-color: $gray-color-custom-1;
-                                    outline: none;
+                                    border-color : $gray-color-custom-1;
+                                    outline      : none;
                                 }
 
                                 i {
-                                    align-self: center;
-                                    position: absolute;
+                                    align-self  : center;
+                                    position    : absolute;
                                     padding-left: 5px;
                                 }
                             }
@@ -120,25 +128,25 @@ $white-color: #ffffff;
                 }
 
                 .header-bottom {
-                    height: 45px;
-                    width: 100%;
-                    border-top: 1px solid $gray-color-custom-1;
+                    height             : 45px;
+                    width              : 100%;
+                    border-top         : 1px solid $gray-color-custom-1;
                     // background-color: rgb(143, 94, 94);
-                    background-color: $blue-color-custom;
-                    padding: 0 5px 0 5px;
+                    background-color   : $blue-color-custom;
+                    padding            : 0 5px 0 5px;
 
                     .header-bottom_container {
-                        height: 100%;
-                        width: 100%;
-                        display: flex;
+                        height         : 100%;
+                        width          : 100%;
+                        display        : flex;
                         justify-content: space-between;
-                        align-items: center;
+                        align-items    : center;
 
                         .left-header {
-                            height: 100%;
-                            display: flex;
+                            height         : 100%;
+                            display        : flex;
                             justify-content: space-between;
-                            align-items: center;
+                            align-items    : center;
 
                             #home_icon {
                                 padding-left: 10px;
@@ -151,47 +159,47 @@ $white-color: #ffffff;
                             }
 
                             #list_item {
-                                list-style: none;
-                                display: flex;
+                                list-style     : none;
+                                display        : flex;
                                 justify-content: space-between;
-                                margin-top: none;
-                                margin-bottom: 0;
-                                color: $white-color;
-                                height: 100%;
-                                align-items: center;
+                                margin-top     : none;
+                                margin-bottom  : 0;
+                                color          : $white-color;
+                                height         : 100%;
+                                align-items    : center;
 
                                 li {
                                     margin-right: 10px;
-                                    padding: 10.5px;
-                                    display: inline-block;
-                                    position: relative;
-                                    transition: 0.5s;
+                                    padding     : 10.5px;
+                                    display     : inline-block;
+                                    position    : relative;
+                                    transition  : 0.5s;
 
                                     &:hover {
                                         background-color: white;
 
                                         a {
-                                            color: blue;
+                                            color  : blue;
                                             padding: 10px;
                                         }
                                     }
 
                                     a {
-                                        color: $white-color;
-                                        font-size: 14px;
+                                        color      : $white-color;
+                                        font-size  : 14px;
                                         font-family: 'Montserrat', sans-serif;
                                     }
 
                                     ul {
-                                        position: absolute;
-                                        top: 100%;
-                                        left: 0;
-                                        width: 250px;
-                                        margin: 0;
-                                        padding: 0;
+                                        position  : absolute;
+                                        top       : 100%;
+                                        left      : 0;
+                                        width     : 250px;
+                                        margin    : 0;
+                                        padding   : 0;
                                         background: $blue-color-custom;
                                         text-align: left;
-                                        display: none;
+                                        display   : none;
                                     }
 
                                     &:hover>ul {
@@ -209,7 +217,7 @@ $white-color: #ffffff;
                                             width: 100%;
 
                                             a {
-                                                color: blue;
+                                                color  : blue;
                                                 padding: 10px;
                                             }
                                         }
@@ -224,25 +232,25 @@ $white-color: #ffffff;
                         .right-header {
 
                             #menu-container {
-                                color: $gray-color-custom-2;
+                                color           : $gray-color-custom-2;
                                 background-color: transparent;
-                                border-style: none;
-                                scroll-behavior: smooth;
+                                border-style    : none;
+                                scroll-behavior : smooth;
 
                                 &:hover {
                                     color: $white-color;
                                 }
 
                                 .menulist {
-                                    display: none;
-                                    box-shadow: 0px 6px 8px rgba(19, 19, 19, .7);
+                                    display         : none;
+                                    box-shadow      : 0px 6px 8px rgba(19, 19, 19, .7);
                                     background-color: #ffffff;
-                                    position: fixed;
-                                    left: 50%;
-                                    top: 55%;
-                                    transform: translate(-50%, -50%);
-                                    height: 550px;
-                                    width: 1100px;
+                                    position        : fixed;
+                                    left            : 50%;
+                                    top             : 55%;
+                                    transform       : translate(-50%, -50%);
+                                    height          : 550px;
+                                    width           : 1100px;
 
                                     &:target {
                                         display: block;
@@ -253,21 +261,21 @@ $white-color: #ffffff;
                                     }
 
                                     .content {
-                                        position: relative;
-                                        width: 100%;
-                                        height: 50px;
-                                        color: #fff;
+                                        position : relative;
+                                        width    : 100%;
+                                        height   : 50px;
+                                        color    : #fff;
                                         animation: 1s grow ease forwards;
 
                                         h2 {
-                                            position: absolute;
-                                            width: 1050px;
-                                            color: red;
-                                            font-size: 30px;
-                                            display: flex;
-                                            align-items: center;
+                                            position       : absolute;
+                                            width          : 1050px;
+                                            color          : red;
+                                            font-size      : 30px;
+                                            display        : flex;
+                                            align-items    : center;
                                             justify-content: center;
-                                            top: 0;
+                                            top            : 0;
                                         }
 
                                         hr {
@@ -275,42 +283,42 @@ $white-color: #ffffff;
                                         }
 
                                         .icon_close::before {
-                                            content: "\f00d";
-                                            right: 0;
-                                            top: 0;
-                                            width: 50px;
-                                            height: 50px;
-                                            position: absolute;
-                                            display: flex;
-                                            z-index: 1;
-                                            font-size: 30px;
-                                            align-items: center;
+                                            content        : "\f00d";
+                                            right          : 0;
+                                            top            : 0;
+                                            width          : 50px;
+                                            height         : 50px;
+                                            position       : absolute;
+                                            display        : flex;
+                                            z-index        : 1;
+                                            font-size      : 30px;
+                                            align-items    : center;
                                             justify-content: center;
                                         }
                                     }
 
                                     .nav_menu {
-                                        height: 500px;
-                                        width: 880px;
-                                        overflow: hidden;
-                                        overflow-y: scroll;
+                                        height          : 500px;
+                                        width           : 880px;
+                                        overflow        : hidden;
+                                        overflow-y      : scroll;
                                         scroll-snap-type: both mandatory;
-                                        scroll-behavior: smooth;
+                                        scroll-behavior : smooth;
 
                                         &::-webkit-scrollbar {
                                             display: none;
                                         }
 
                                         .list {
-                                            color: red;
-                                            position: relative;
-                                            width: 880px;
-                                            display: grid;
-                                            padding: 0px 0px 0px 60px;
-                                            top: 0;
+                                            color                : red;
+                                            position             : relative;
+                                            width                : 880px;
+                                            display              : grid;
+                                            padding              : 0px 0px 0px 60px;
+                                            top                  : 0;
                                             grid-template-columns: 1fr 1fr 1fr 1fr;
-                                            grid-template-rows: 1fr 1fr;
-                                            grid-gap: 5px 20px;
+                                            grid-template-rows   : 1fr 1fr;
+                                            grid-gap             : 5px 20px;
 
                                             ul {
                                                 scroll-snap-align: center;
@@ -320,69 +328,71 @@ $white-color: #ffffff;
 
                                                     &:nth-child(1) {
                                                         font-weight: bold;
-                                                        font-size: 20px;
+                                                        font-size  : 20px;
                                                     }
 
                                                     &:nth-last-child(1) {
-                                                        padding: 0;
+                                                        padding  : 0;
                                                         font-size: 16px;
                                                     }
                                                 }
 
                                                 hr {
-                                                    margin: 0;
+                                                    margin    : 0;
                                                     margin-top: 1rem;
-                                                    width: 50%;
+                                                    width     : 50%;
                                                 }
                                             }
                                         }
                                     }
 
                                     .vl {
-                                        height: 510px;
+                                        height     : 510px;
                                         border-left: 1px solid red;
-                                        position: absolute;
-                                        left: 80%;
-                                        top: 40px;
+                                        position   : absolute;
+                                        left       : 80%;
+                                        top        : 40px;
                                     }
 
                                     .nav-menu-other {
-                                        position: absolute;
-                                        list-style: none;
-                                        width: 220px;
-                                        top: 0;
-                                        margin-top: 50px;
-                                        height: 500px;
-                                        right: 0;
-                                        overflow: hidden;
-                                        overflow-y: scroll;
+                                        position        : absolute;
+                                        list-style      : none;
+                                        width           : 220px;
+                                        top             : 0;
+                                        margin-top      : 50px;
+                                        height          : 500px;
+                                        right           : 0;
+                                        overflow        : hidden;
+                                        overflow-y      : scroll;
                                         scroll-snap-type: both mandatory;
-                                        scroll-behavior: smooth;
+                                        scroll-behavior : smooth;
 
                                         &::-webkit-scrollbar {
                                             display: none;
                                         }
 
                                         .list-other {
-                                            color: red;
-                                            text-align: center;
-                                            display: grid;
+                                            color                : red;
+                                            text-align           : center;
+                                            display              : grid;
                                             grid-template-columns: 1fr;
-                                            grid-template-rows: 100px;
-                                            grid-gap: 10px;
-                                            hr{
+                                            grid-template-rows   : 100px;
+                                            grid-gap             : 10px;
+
+                                            hr {
                                                 margin: 0;
                                             }
+
                                             ul {
                                                 scroll-snap-align: start;
-                                                padding: 0;
+                                                padding          : 0;
 
                                                 li {
                                                     padding: 2px 0 0 0;
 
                                                     &:nth-child(1) {
                                                         font-weight: bold;
-                                                        font-size: 20px;
+                                                        font-size  : 20px;
                                                     }
                                                 }
 
@@ -393,7 +403,7 @@ $white-color: #ffffff;
 
                                 .all_list {
                                     cursor: pointer;
-                                    color: $white-color;
+                                    color : $white-color;
                                 }
                             }
                         }
@@ -405,18 +415,18 @@ $white-color: #ffffff;
         //footer css
 
         #footer {
-            height: 400px;
-            width: 100%;
-            margin-top: 40px;
+            height             : 400px;
+            width              : 100%;
+            margin-top         : 40px;
             // background-color: $gray-color-custom-1;
 
             .footer-container {
 
                 .footer-top {
-                    height: 180px;
-                    display: grid;
+                    height               : 180px;
+                    display              : grid;
                     grid-template-columns: auto auto auto auto;
-                    grid-gap: 10px;
+                    grid-gap             : 10px;
 
                     .item {
                         text-align: center;
@@ -434,10 +444,10 @@ $white-color: #ffffff;
                 }
 
                 .footer-center {
-                    height: 70px;
-                    border-top: 0.5px solid $gray-color-custom-3;
-                    border-bottom: 0.5px solid $gray-color-custom-3;
-                    display: flex;
+                    height         : 70px;
+                    border-top     : 0.5px solid $gray-color-custom-3;
+                    border-bottom  : 0.5px solid $gray-color-custom-3;
+                    display        : flex;
                     justify-content: space-between;
 
                     .footer-center_left {
@@ -445,8 +455,8 @@ $white-color: #ffffff;
 
                         span:first-child {
                             padding-right: 10px;
-                            font-size: 14px;
-                            font-family: 'Inter', sans-serif;
+                            font-size    : 14px;
+                            font-family  : 'Inter', sans-serif;
                         }
 
                     }
@@ -455,22 +465,22 @@ $white-color: #ffffff;
                         align-self: center;
 
                         .right-container {
-                            display: flex;
+                            display        : flex;
                             justify-content: space-between;
 
                             span {
-                                font-size: 14px;
+                                font-size    : 14px;
                                 padding-right: 10px;
                             }
 
                             .left {
                                 padding-right: 10px;
-                                font-size: 14px;
-                                align-self: center;
-                                color: $gray-color-custom-3;
+                                font-size    : 14px;
+                                align-self   : center;
+                                color        : $gray-color-custom-3;
 
                                 span:hover {
-                                    color: black;
+                                    color : black;
                                     cursor: pointer;
                                 }
 
@@ -484,7 +494,7 @@ $white-color: #ffffff;
 
                                 img {
                                     padding-right: 4px;
-                                    cursor: pointer;
+                                    cursor       : pointer;
                                 }
                             }
                         }
@@ -492,37 +502,37 @@ $white-color: #ffffff;
                 }
 
                 .footer-bottom {
-                    height: 150px;
-                    display: flex;
+                    height         : 150px;
+                    display        : flex;
                     justify-content: space-between;
 
                     .footer-bottom_left {
-                        display: flex;
+                        display       : flex;
                         flex-direction: column;
 
                         span:nth-child(2) {
-                            color: $blue-color-custom;
+                            color      : $blue-color-custom;
                             font-weight: 600;
                         }
 
                         span:last-child {
-                            color: $blue-color-custom;
+                            color      : $blue-color-custom;
                             font-weight: 600;
                         }
                     }
 
                     .footer-bottom_center {
-                        display: flex;
+                        display       : flex;
                         flex-direction: column;
                     }
 
                     .footer-bottom_right {
-                        display: flex;
+                        display       : flex;
                         flex-direction: column;
                     }
 
                     span {
-                        font-size: 13px;
+                        font-size  : 13px;
                         font-family: 'Inter', sans-serif;
                     }
                 }
@@ -531,11 +541,11 @@ $white-color: #ffffff;
 
         // body
         #layout {
-            display: grid;
+            display              : grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 20px;
-            grid-template-rows: 300px 200px;
-            height: 500px;
+            grid-gap             : 20px;
+            grid-template-rows   : 300px 200px;
+            height               : 500px;
 
 
             .layout-item {
@@ -545,49 +555,49 @@ $white-color: #ffffff;
                     padding: 15px 0 0px 15px;
 
                     .layout-content-first {
-                        display: -webkit-box;
-                        padding-top: 5px;
+                        display           : -webkit-box;
+                        padding-top       : 5px;
                         -webkit-line-clamp: 7;
                         -webkit-box-orient: vertical;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
+                        overflow          : hidden;
+                        text-overflow     : ellipsis;
                     }
 
                 }
 
                 .layout-description {
-                    display: flex;
-                    flex-direction: column;
-                    padding: 15px 0 0px 15px;
+                    display           : flex;
+                    flex-direction    : column;
+                    padding           : 15px 0 0px 15px;
                     // justify-content: space-between;
 
                     .layout-title {
-                        font-size: 20px;
+                        font-size  : 20px;
                         font-weight: 600;
 
                     }
 
                     .layout-content {
-                        display: -webkit-box;
-                        padding-top: 5px;
+                        display           : -webkit-box;
+                        padding-top       : 5px;
                         -webkit-line-clamp: 5;
                         -webkit-box-orient: vertical;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
+                        overflow          : hidden;
+                        text-overflow     : ellipsis;
                     }
                 }
             }
 
             .layout-image {
                 padding-top: 20px;
-                height: 100px;
-                width: 100px;
-                object-fit: cover;
+                height     : 100px;
+                width      : 100px;
+                object-fit : cover;
             }
 
             .layout-image-fisrt {
                 height: auto;
-                width: 1000px;
+                width : 1000px;
             }
 
             .layout-item:first-child {
@@ -596,19 +606,19 @@ $white-color: #ffffff;
         }
 
         .alert {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            width: 300px;
-            background-color: #CE647c;
-            color: #fff;
-            font-family: system-ui;
-            padding: 10px;
-            border-radius: 10px;
-            display: grid;
+            position             : fixed;
+            bottom               : 20px;
+            left                 : 20px;
+            width                : 300px;
+            background-color     : #CE647c;
+            color                : #fff;
+            font-family          : system-ui;
+            padding              : 10px;
+            border-radius        : 10px;
+            display              : grid;
             grid-template-columns: 40px auto 30px;
             // animation: showalert 0.5s ease-in-out 1;
-            display: none;
+            display              : none;
 
             .title {
                 font-weight: bold;
@@ -620,9 +630,9 @@ $white-color: #ffffff;
 
             .icon,
             .close {
-                display: flex;
+                display        : flex;
                 justify-content: center;
-                align-items: center;
+                align-items    : center;
             }
         }
 

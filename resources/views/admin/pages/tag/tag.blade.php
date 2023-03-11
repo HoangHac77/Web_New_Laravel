@@ -23,8 +23,8 @@
             <div class="card mb-4">
                 <div class="card-header d-flex justify-content-between bg-light">
                     <div class="text-black">Extended DataTables</div>
-                    <div><a class="btn btn-success btn-sm font-weight-bold" style="font-size: 14px; font-weight: initial;"
-                            href="category/create" role="button">Create Category</a></div>
+                    <div><a class="btn btn-success btn-sm font-weight-bold" style="font-size: 14px; font-weight: initial;" href="tag/create"
+                            role="button">Create Tag</a></div>
                 </div>
                 <div class="card-body">
                     <table id="datatablesSimple">
@@ -32,7 +32,6 @@
                             <tr>
                                 <th>Name</th>
                                 <th>Slug</th>
-                                <th>Desc</th>
                                 <th>Created_at</th>
                                 <th>Updated_at</th>
                                 {{-- <th>Start date</th>
@@ -45,7 +44,6 @@
                             <tr>
                                 <th>Name</th>
                                 <th>Slug</th>
-                                <th>Desc</th>
                                 <th>Created_at</th>
                                 <th>Updated_at</th>
                                 {{-- <th>Start date</th>
@@ -56,36 +54,28 @@
                         </tfoot>
                         <tbody>
 
-                            @foreach ($categories as $category)
+                            @foreach ($tags as $tag)
                                 <tr>
-                                    <td>{{ $category->name }}</td>
-                                    <td>{{ $category->slug }}</td>
-                                    <td>{{ $category->desc }}</td>
-                                    <td>{{ $category->created_at }}</td>
-                                    <td>{{ $category->updated_at }}</td>
+                                    <td>{{ $tag->name }}</td>
+                                    <td>{{ $tag->slug }}</td>
+                                    <td>{{ $tag->created_at }}</td>
+                                    <td>{{ $tag->updated_at }}</td>
                                     {{-- <td>2011/04/25</td>
                                 <td>$320,800</td>
                                 <td>
                                     <div class="badge bg-primary text-white rounded-pill">Full-time</div>
                                 </td> --}}
                                     <td>
-                                        <div style="display: flex; justify-content: space-around">
-                                            <a style="height: 30px !important; width: 30px !important; margin-right: 8px"
-                                                href="/admin/category/{{ $category->id }}/edit"
-                                                class="btn btn-outline-primary btn-icon">
-                                                <i style="width: 25px; height: 25px; padding: 2px" data-feather="edit"></i>
-                                            </a>
+                                        <a href="/admin/tag/{{ $tag->id }}/edit"
+                                            class="btn btn-outline-warning btn-datatable">Edit</a>
 
-                                            <form action="/admin/category/{{ $category->id }}" method="post">
-                                                @csrf
-                                                @method('DELETE')
-                                                <button style="height: 30px !important; width: 30px !important;"
-                                                    type="submit" class="btn btn-outline-danger btn-icon ">
-                                                    <i style="width: 25px; height: 25px; padding: 2px"
-                                                        data-feather="trash-2"></i>
-                                                </button>
-                                            </form>
-                                        </div>
+                                        <form class="btn btn-datatable" style="margin-left: 20px" action="/admin/tag/{{ $tag->id }}" method="post">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-outline-danger btn-sm">
+                                                Delete
+                                            </button>
+                                        </form>
                                     </td>
                                 </tr>
                             @endforeach

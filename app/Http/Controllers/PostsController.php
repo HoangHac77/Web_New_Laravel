@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\Post;
+use App\Models\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class PostsController extends Controller
 {
@@ -13,7 +17,9 @@ class PostsController extends Controller
      */
     public function index()
     {
-        return view("admin.pages.post.post");
+        $tags = Tag::all();
+        $posts = Post::all();
+        return view("admin.pages.post.post")->with(['posts' => $posts, 'tags' => $tags]);
     }
 
     /**
@@ -23,7 +29,9 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //
+        $tags = Tag::all();
+        $categories = Category::all();
+        return view('admin.pages.post.create', compact('categories', 'tags'));
     }
 
     /**
@@ -34,7 +42,38 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        // $generatedImageName = 'image' . time() . '-'
+        //     . $request->name . '.'
+        //     . $request->image->extension();
+        // $request->image->move(public_path('images'), $generatedImageName);
+
+        // dd($generatedImageName);
+
+        $request->validate([
+            'title' => 'required',
+            'content' => 'required|min:10|max:200',
+            'category_id' => 'required',
+            'img_path' => 'required|mimes:jpg,png,jpeg|max:5048',
+        ]);
+        // dd($request->all());
+        $generatedImageName = 'img_path' . time() . '-'
+            . $request->name . '.'
+            . $request->img_path->extension();
+        $request->img_path->move(public_path('images'), $generatedImageName);
+
+        $posts = Post::create([
+            'title' => $request->input('title'),
+            'content' => $request->input('content'),
+            'category_id' => $request->input('category_id'),
+            'img_path' =>  $generatedImageName,
+            'slug' => Str::slug($request->title),
+        ]);
+
+        $posts->tags()->attach($request->tags);
+        // save database
+        $posts->save();
+        return redirect('/admin/post');
     }
 
     /**
@@ -45,7 +84,11 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        //
+        $posts = Post::find($id);
+        $category = Category::find($posts->category_id);
+        $posts->category = $category;
+
+        return view('admin.pages.post.show')->with('posts', $posts);
     }
 
     /**
@@ -79,6 +122,9 @@ class PostsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $posts = Post::find($id);
+        $posts->delete();
+
+        return redirect('/admin/post');
     }
 }

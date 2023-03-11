@@ -9,8 +9,8 @@ composer update
 chạy 
 composer install
 
-tạo file .env
-copy hết nội dung của file .env.example sang
+chay
+cp .env.example .env
 
 chạy lệnh 
 php artisan key:generate

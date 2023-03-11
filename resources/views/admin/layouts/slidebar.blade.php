@@ -13,6 +13,10 @@
                     <div class="nav-link-icon"><i data-feather="book"></i></div>
                     Posts
                 </a>
+                <a class="nav-link" href="/admin/tag">
+                    <div class="nav-link-icon"><i data-feather="tag"></i></div>
+                    Tags
+                </a>
                 <!-- Sidenav Link (Tables)-->
                 <a class="nav-link" href="/admin/category">
                     <div class="nav-link-icon"><i data-feather="book-open"></i></div>

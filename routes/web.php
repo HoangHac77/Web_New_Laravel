@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TagsController;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Auth;
 
@@ -46,6 +47,7 @@ Route::get('/home', [HomeController::class, 'index']);
         Route::get('/', [AdminController::class, 'index']);
         Route::resource('/post', PostsController::class);
         Route::resource('/category', CategoryController::class);
+        Route::resource('/tag', TagsController::class);
         Route::resource('/profile', ProfileController::class);
         Route::resource('/user', UsersController::class);
     });

@@ -12,6 +12,9 @@
     <link href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css" rel="stylesheet" />
     <link href="{{ asset('css/admin/css/styles.css') }} " rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="{{ asset('css/admin/img/favicon.png') }}" />
+    
+    @stack('style')
+
     <script data-search-pseudo-elements="" defer=""
         src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" crossorigin="anonymous">
@@ -48,7 +51,7 @@
         integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
         data-cf-beacon='{"rayId":"7a5032ac9e9210a0","token":"6e2c2575ac8f44ed824cef7899ba8463","version":"2023.2.0","si":100}'
         crossorigin="anonymous"></script>
-
+    @stack('scripts')
 </body>
 
 </html>
