@@ -34,7 +34,7 @@
                                 <th>content</th>
                                 <th>Picture</th>
                                 <th>Tags</th>
-                                <th>Created_at</th>
+                                <th>Author</th>
                                 <th>Updated_at</th>
                                 {{-- <th>Start date</th>
                                 <th>Salary</th>
@@ -48,7 +48,7 @@
                                 <th>content</th>
                                 <th>Picture</th>
                                 <th>Tags</th>
-                                <th>Created_at</th>
+                                <th>Author</th>
                                 <th>Updated_at</th>
                                 {{-- <th>Start date</th>
                                 <th>Salary</th>
@@ -57,22 +57,28 @@
                             </tr>
                         </tfoot>
                         <tbody>
-
-                            @foreach ($posts as $posts)
+                            @foreach ($posts as $key => $post)
                                 <tr>
-                                    <td>{{ $posts->title }}</td>
-                                    <td>{{ $posts->content }}</td>
-                                    <td><img width="75px" height="75px" src="{{ asset('images/' . $posts->img_path) }}"
+                                    <td>{{ $post->title }}</td>
+                                    <td>{{ $post->content }}</td>
+                                    <td><img width="75px" height="75px" src="{{ asset('images/' . $post->img_path) }}"
                                             alt=""></td>
                                     <td>
-                                        @foreach ($posts->tags as $tag)
+                                        @foreach ($post->tags as $tag)
                                             <ul value={{ $tag->id }}>
-                                                <li>{{ $tag->name }}</li>
+                                                <li style="list-style-type: none;">{{ $tag->name }}</li>
                                             </ul>
                                         @endforeach
                                     </td>
-                                    <td>{{ $posts->created_at }}</td>
-                                    <td>{{ $posts->updated_at }}</td>
+                                    <td>
+                                        @foreach ($users as $user)
+                                            @if ($post->user_id == $user->id)
+                                                <li style="list-style-type: none;">{{ $user->name_user }}</li>
+                                            @endif
+                                        @endforeach
+                                        {{-- {{ $post->users->name_user }} --}}
+                                    </td>
+                                    <td>{{ $post->updated_at }}</td>
                                     {{-- <td>2011/04/25</td>
                                 <td>$320,800</td>
                                 <td>
@@ -81,12 +87,12 @@
                                     <td>
                                         <div style="display: flex; justify-content: space-between">
                                             <a style="height: 30px !important; width: 30px !important; margin-right: 8px"
-                                                href="/admin/post/{{ $posts->id }}/edit"
+                                                href="/admin/post/{{ $post->id }}/edit"
                                                 class="btn btn-outline-primary btn-icon">
                                                 <i style="width: 25px; height: 25px; padding: 2px" data-feather="edit"></i>
                                             </a>
 
-                                            <form action="/admin/post/{{ $posts->id }}" method="post">
+                                            <form action="/admin/post/{{ $post->id }}" method="post">
                                                 @csrf
                                                 @method('DELETE')
                                                 <button style="height: 30px !important; width: 30px !important;"
