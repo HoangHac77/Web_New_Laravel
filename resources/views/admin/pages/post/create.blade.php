@@ -51,7 +51,7 @@
                                     <div class="col-md-3">
                                         <label class="small mb-1" for="form-category">Choose Category</label>
                                         <select class="form-select @error('category_id') is-invalid @enderror"
-                                            style="line-height: 1.3" if="form-category" aria-label="Default select example"
+                                            style="line-height: 1.3" id="form-category" aria-label="Default select example"
                                             name="category_id">
                                             <option value="" holder>Open this select category</option>
                                             @foreach ($categories as $category)
