@@ -50,9 +50,9 @@ class LoginController extends Controller
             if (auth()->user()->role == 'admin') {
                 return redirect('/admin');
             } else if (auth()->user()->role == 'author') {
-                return redirect('/home');
+                return redirect('/');
             } else {
-                return redirect('/home');
+                return redirect('/');
             }
         } else {
             return redirect('/login')->with('error', 'Incorrect email or password');
