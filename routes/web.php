@@ -31,8 +31,8 @@ Route::get('/home', [HomeController::class, 'index']);
 
 // Route::get('/home', [HomeController::class, 'index']);
 
-Route::middleware(['auth', 'user-role:admin'])->group(function(){
-    Route::prefix('/admin')->group(function() {
+Route::middleware(['auth', 'user-role:admin'])->group(function () {
+    Route::prefix('/admin')->group(function () {
         Route::get('/', [AdminController::class, 'index']);
         Route::resource('/post', PostsController::class);
         Route::resource('/category', CategoryController::class);

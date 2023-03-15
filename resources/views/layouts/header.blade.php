@@ -23,11 +23,9 @@
                         <div class="help-block">
                             <div>Popular:</div>
                             <ul>
-                                <li><a href="#">HTML5</a></li>
-                                <li><a href="#">CSS3</a></li>
-                                <li><a href="#">Bootstrap 3</a></li>
-                                <li><a href="#">jQuery</a></li>
-                                <li><a href="#">AnguarJS</a></li>
+                                <li><a href="#">Thời Sự</a></li>
+                                <li><a href="#">Bóng Đá</a></li>
+                                <li><a href="#">Ăn Uống</a></li>
                             </ul>
                         </div>
                     </form>
@@ -114,80 +112,7 @@
                     <li class="for-tablet nav-title"><a>Menu</a></li>
                     <li class="for-tablet"><a href="login.html">Login</a></li>
                     <li class="for-tablet"><a href="register.html">Register</a></li>
-                    <li><a href="category.html">Standard</a></li>
-                    <li class="dropdown magz-dropdown">
-                        <a href="category.html">Pages <i class="ion-ios-arrow-right"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="index.html">Home</a></li>
-                            <li class="dropdown magz-dropdown">
-                                <a href="#">Authentication <i class="ion-ios-arrow-right"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="register.html">Register</a></li>
-                                    <li><a href="forgot.html">Forgot Password</a></li>
-                                    <li><a href="reset.html">Reset Password</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="category.html">Category</a></li>
-                            <li><a href="single.html">Single</a></li>
-                            <li><a href="page.html">Page</a></li>
-                            <li><a href="search.html">Search</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li class="dropdown magz-dropdown">
-                                <a href="#">Error <i class="ion-ios-arrow-right"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="403.html">403</a></li>
-                                    <li><a href="404.html">404</a></li>
-                                    <li><a href="500.html">500</a></li>
-                                    <li><a href="503.html">503</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown magz-dropdown"><a href="#">Dropdown <i
-                                class="ion-ios-arrow-right"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="category.html">Internet</a></li>
-                            <li class="dropdown magz-dropdown"><a href="category.html">Troubleshoot <i
-                                        class="ion-ios-arrow-right"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="category.html">Software</a></li>
-                                    <li class="dropdown magz-dropdown"><a href="category.html">Hardware <i
-                                                class="ion-ios-arrow-right"></i></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="category.html">Main Board</a></li>
-                                            <li><a href="category.html">RAM</a></li>
-                                            <li><a href="category.html">Power Supply</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="category.html">Brainware</a>
-                                </ul>
-                            </li>
-                            <li><a href="category.html">Office</a></li>
-                            <li class="dropdown magz-dropdown"><a href="#">Programming <i
-                                        class="ion-ios-arrow-right"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="category.html">Web</a></li>
-                                    <li class="dropdown magz-dropdown"><a href="category.html">Mobile <i
-                                                class="ion-ios-arrow-right"></i></a>
-                                        <ul class="dropdown-menu">
-                                            <li class="dropdown magz-dropdown"><a href="category.html">Hybrid <i
-                                                        class="ion-ios-arrow-right"></i></a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#">Ionic Framework 1</a></li>
-                                                    <li><a href="#">Ionic Framework 2</a></li>
-                                                    <li><a href="#">Ionic Framework 3</a></li>
-                                                    <li><a href="#">Framework 7</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="category.html">Native</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="category.html">Desktop</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
+                    <li><a href="/"><i style="padding-right: 10px" class="ion-home"></i>Home</a></li>
                     <li class="dropdown magz-dropdown magz-dropdown-megamenu"><a href="#">Mega Menu <i
                                 class="ion-ios-arrow-right"></i>
                             <div class="badge">Hot</div>
@@ -284,7 +209,37 @@
                             </div>
                         </div>
                     </li>
-                    <li class="dropdown magz-dropdown magz-dropdown-megamenu"><a href="#">Column <i
+                    {{-- <li class="dropdown magz-dropdown">
+                        <a href="category.html">Pages <i class="ion-ios-arrow-right"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="dropdown magz-dropdown">
+                                <a href="#">Authentication <i class="ion-ios-arrow-right"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="register.html">Register</a></li>
+                                    <li><a href="forgot.html">Forgot Password</a></li>
+                                    <li><a href="reset.html">Reset Password</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="category.html">Category</a></li>
+                            <li><a href="single.html">Single</a></li>
+                            <li><a href="page.html">Page</a></li>
+                            <li><a href="search.html">Search</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li class="dropdown magz-dropdown">
+                                <a href="#">Error <i class="ion-ios-arrow-right"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="403.html">403</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                    <li><a href="500.html">500</a></li>
+                                    <li><a href="503.html">503</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li> --}}
+
+                    <li class="dropdown magz-dropdown magz-dropdown-megamenu"><a href="#">Category <i
                                 class="ion-ios-arrow-right"></i></a>
                         <div class="dropdown-menu megamenu">
                             <div class="megamenu-inner">
@@ -333,7 +288,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="dropdown magz-dropdown"><a href="#">Dropdown Icons <i
+                    <li class="dropdown magz-dropdown"><a href="#">Accounts Setting <i
                                 class="ion-ios-arrow-right"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#"><i class="icon ion-person"></i> My Account</a></li>
@@ -342,7 +297,15 @@
                             <li><a href="#"><i class="icon ion-key"></i> Change Password</a></li>
                             <li><a href="#"><i class="icon ion-settings"></i> Settings</a></li>
                             <li class="divider"></li>
-                            <li><a href="#"><i class="icon ion-log-out"></i> Logout</a></li>
+                            <li><a href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();"><i
+                                        class="icon ion-log-out"></i> Logout</a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                    class="d-none">
+                                    @csrf
+                                </form>
+                            </li>
                         </ul>
                     </li>
                 </ul>

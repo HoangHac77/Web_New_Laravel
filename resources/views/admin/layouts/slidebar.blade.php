@@ -39,7 +39,7 @@
                     </div>
                 @else
                     <div class="sidenav-footer-title">
-                        {{ Auth::user()->name }}
+                        {{ Auth::user()->name_user }}
                     </div>
                 @endif
                 {{-- {{ var_dump(Auth::user()) }} --}}
